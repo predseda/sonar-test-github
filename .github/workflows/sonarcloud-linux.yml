@@ -22,7 +22,7 @@ jobs:
         with:
           java-version: 11
       - name: Install CMake
-        run: sudo apt -y update && apt -y install cmake
+        run: sudo apt-get -y update && sudio apt-get -y install cmake
       - name: Download and set up sonar-scanner
         env:
           SONAR_SCANNER_DOWNLOAD_URL: https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-${{ env.SONAR_SCANNER_VERSION }}-linux.zip
