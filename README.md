@@ -1,3 +1,2 @@
-
 SonarCloud test
 
