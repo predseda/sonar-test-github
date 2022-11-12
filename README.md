@@ -10,3 +10,19 @@ Actions in this repo are currently disabled and the project in SonarCloud doesn'
 and **update file `sonar-project.properties`!**  
 The SonarCloud application is uninstalled and revoked from this repo -> you will need to log in to SonarCloud,
 set up an organization, and select this repo for as a project to scan.
+
+If you need to build the source for testing, run following commands for Unix/Windows systems:
+
+Unix:
+```shell
+cmake -S . -B build
+cd build
+make
+```
+
+Windows:
+```powershell
+cmake -G "Visual Studio 17 2022" -A x64 -S . -B build
+cmake --build build --config Release
+```
+Please note the argument of `-G` and `-A` parameters might be different, depending on your compiler and OS architecture.
