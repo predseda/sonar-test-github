@@ -5,3 +5,5 @@ implemented using POSIX and Win32 API.
 Actions examples are implemented for Linux, MacOS and Windows.
 
 Actions in this repo are currently disabled and the project in SonarCloud doesn't exist (is deleted).
+
+**Note to myself:** If you want to run the scan, set up the project in SonarCloud and **update file `sonar-project.properties`!**
